@@ -15,7 +15,7 @@ const Nav = () => {
         setShow(false); }
 
     const checkout = async () => {
-        await fetch('http://localhost:4000/checkout', {
+        await fetch('http://localhost:4000', {
             method: "POST",
             headers : {
                 'Content-Type' : 'application/json'
