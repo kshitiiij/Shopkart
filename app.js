@@ -8,12 +8,12 @@ app.use(express.static("public"));
 app.use(express.json());
 
 
-app.get("/", (req, res) => { 
-  res.send("Hello World"); 
-}); 
+// app.get("/", (req, res) => { 
+//   res.send("Hello World"); 
+// }); 
 
 
-app.post("/checkout", async (req,res) => {
+app.post("/", async (req,res) => {
     
     /*
     what we get from react : req.body.items
