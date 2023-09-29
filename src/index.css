@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+*{
+  background-color: rgb(205, 203, 203);
+  font-family: "Quicksand";
+  margin: 0;
+  padding: 0;
+}
+
+.button {
+  background: rgb(112, 111, 111);
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  margin: 2px 3px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.navbar {
+  /* padding: 20px; */
+  position: absolute;
+  width: 100%;
+  margin: 10px ;
+  margin-bottom: 20px;
+  /* border-bottom: 1px solid #f2f2f2; */
+  /* min-width: 100%; */
+  background-color: rgb(66, 65, 65);
+}
+
+.navbar h1 {
+  font-size: 50px;
+  background-color: inherit;
+  color: rgb(217, 214, 214);
+  margin-left: 10px;
+}
+
+
+
+.collapsible {
+  background-color: rgb(205, 203, 203);  
+  color: rgb(66, 65, 65);;
+  cursor: pointer;
+  margin-right: 10px;
+  padding: 15px;
+  width: 8%;
+  border: none;
+  text-align: center;
+  font-size: 15px;
+  float: right;
+  border-radius: 8px;
+}
+
+.modal-header {
+  background-color: rgb(66, 65, 65);
+}
+.modal-header h2 {
+  background-color: inherit;
+  color: rgb(205, 203, 203);
+}
