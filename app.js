@@ -1,5 +1,6 @@
 const express = require("express");
-var cors = require("cors");
+const cors = require("cors");
+const PORT = process.env.PORT || 4000;
 const stripe = require("stripe")("sk_test_51NdzylSAEVuXTV4aLB60H68g4nq54XmZz5qyZ6mismBNezUTp4sgUHX9mjKOIsgArddAm7a6UEG5QDuvl2xI49Ox00Bii44Mhs");
 const app = express();
 
@@ -13,7 +14,7 @@ app.get("/", (req, res) => {
 }); 
 
 
-app.post("/checkout", async (req,res) => {
+app.post("/", async (req,res) => {
     
     /*
     what we get from react : req.body.items
@@ -57,4 +58,13 @@ app.post("/checkout", async (req,res) => {
 
 })
 
-app.listen(4000,() => console.log("server started"));
+// app.listen(4000,() => console.log("server started"));
+
+const start = () => {
+    try {
+        app.listen(PORT, () => console.log(`${PORT} is listening!`))
+    } catch(error) {
+        console.log(error);
+    }
+}
+start();
