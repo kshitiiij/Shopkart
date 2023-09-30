@@ -13,7 +13,7 @@ app.get("/", (req, res) => {
 }); 
 
 
-app.post("/", async (req,res) => {
+app.post("/checkout", async (req,res) => {
     
     /*
     what we get from react : req.body.items
