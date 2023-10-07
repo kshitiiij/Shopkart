@@ -23,7 +23,6 @@ app.post("/", async (req,res) => {
             quantity:3
         }
     ]
-
     what stripe wants : line_items
     [
         {
@@ -32,6 +31,7 @@ app.post("/", async (req,res) => {
         }
     ]
     */
+
     console.log(req.body);
     const items = req.body.items;
     let lineItems = [];
@@ -44,27 +44,6 @@ app.post("/", async (req,res) => {
         )
     });
 
-    // const paymentIntent = stripe.paymentIntents.create({
-    // amount: 5,
-    // currency: "inr",
-    // payment_method_types : ['card'],
-    // // automatic_payment_methods: { enabled: true }
-    // receipt_email : "kshitijs.1010+test@gmail.com"
-    // });
-
-    // const {paymentMethodType , currency }  = req.body;
-    // try {
-    //     const paymentIntent = await stripe.paymentIntents.create({
-    //     amount: 500,
-    //     currency: "inr",
-    //     // payment_method_types : [paymentMethodType],
-    //     // automatic_payment_methods: { enabled: true }
-    //     receipt_email : "kshitijs.1010+test@gmail.com"
-    //     });
-    // } catch (e) {
-    //     res.status(400).json({error : e.message})
-    // }
-    // res.json({ clientSecret : paymentIntent.client_secret});
 
     const session = await stripe.checkout.sessions.create({
         line_items : lineItems,
@@ -72,7 +51,7 @@ app.post("/", async (req,res) => {
         currency : "inr",
         success_url : "https://shopkartbykshitij.netlify.app/success",
         cancel_url : "https://shopkartbykshitij.netlify.app/cancel",
-        customer_email : "kshitijs.1010+test@gmail.com",
+        customer_email : "kshitijs.1010@gmail.com",
         submit_type : 'pay',
         allow_promotion_codes: true,
     });
@@ -80,12 +59,8 @@ app.post("/", async (req,res) => {
     res.send(JSON.stringify({
         url : session.url
     }));
-
-    
-
 })
 
-// app.listen(4000,() => console.log("server started"));
 
 const start = async () => {
     try {
