@@ -48,6 +48,7 @@ app.post("/", async (req,res) => {
     const session = await stripe.checkout.sessions.create({
         line_items : lineItems,
         mode : 'payment',
+        payment_method_types : ['card'],
         currency : "inr",
         success_url : "https://shopkartbykshitij.netlify.app/success",
         cancel_url : "https://shopkartbykshitij.netlify.app/cancel",
