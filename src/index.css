@@ -26,11 +26,11 @@
 }
 
 .navbar h1 {
-  font-size: 3.9vw;
+  font-size: min(50px,5vw);
   background-color: inherit;
   color: rgb(217, 214, 214);
   margin-left: 10px;
-
+  
 }
 
 
@@ -39,15 +39,16 @@
   background-color: rgb(205, 203, 203);  
   color: rgb(66, 65, 65);;
   cursor: pointer;
-  margin-right: 10px;
-  padding: 15px;
-  width: 8%;
+  margin-right: 12px;
+  padding: 10px;
+  width: 11%;
   border: none;
   text-align: center;
   font-size: 15px;
   float: right;
   border-radius: 8px;
-  min-width: 11%;
+  min-width: max(8%,5vw);
+  
 }
 
 .modal-header {
