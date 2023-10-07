@@ -1,6 +1,6 @@
 const Cancel = () => {
     return (
-        <h1>Sorry to see you cancel your stripe payment</h1>
+        <h3 className="cancel">Sorry to see you cancel your stripe payment</h3>
     )
 }
 

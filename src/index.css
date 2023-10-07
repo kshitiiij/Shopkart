@@ -18,13 +18,10 @@
 }
 
 .navbar {
-  /* padding: 20px; */
   position: absolute;
   width: 100%;
   margin: 10px ;
   margin-bottom: 20px;
-  /* border-bottom: 1px solid #f2f2f2; */
-  /* min-width: 100%; */
   background-color: rgb(66, 65, 65);
 }
 
@@ -49,6 +46,7 @@
   font-size: 15px;
   float: right;
   border-radius: 8px;
+  min-width: 11%;
 }
 
 .modal-header {
@@ -57,4 +55,11 @@
 .modal-header h2 {
   background-color: inherit;
   color: rgb(205, 203, 203);
+}
+
+.cancel,.success{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
 }
