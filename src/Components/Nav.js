@@ -15,13 +15,14 @@ const Nav = () => {
         setShow(false); }
 
     const checkout = async () => {
-        await fetch('http://localhost:4000', {
+        await fetch('https://shopkart.up.railway.app/', {
             method: "POST",
             headers : {
                 'Content-Type' : 'application/json'
             },
             body : JSON.stringify({items : cart.items})
         }).then((response) => {
+            console.log("new order sent");
             return response.json();
         }).then((response) => {
             if(response.url){
