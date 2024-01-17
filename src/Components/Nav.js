@@ -15,7 +15,7 @@ const Nav = () => {
         setShow(false); }
 
     const checkout = async () => {
-        await fetch('https://shopkart.up.railway.app/', {
+        await fetch('https://shopkart-utv1.onrender.com/', {
             method: "POST",
             headers : {
                 'Content-Type' : 'application/json'
