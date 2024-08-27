@@ -1,0 +1,149 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+*{
+  background-color: rgb(60, 109, 82);
+  box-sizing: border-box;
+  font-family: "Quicksand";
+  margin: 0;
+  padding: 0;
+}
+
+.body {
+  background-color: rgb(60, 109, 82);
+  overflow-x: hidden;
+}
+
+.button {
+  background: rgb(243, 19, 19);
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  margin: 2px 3px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+.navbar {
+  width: 100%;
+  margin: 0px ;
+  background-color: rgb(216, 9, 9);
+  box-sizing: border-box;
+}
+
+.navbar h1 {
+  font-size: min(50px,5vw);
+  background-color: inherit;
+  color: rgb(217, 214, 214);
+  margin-left: 10px;  
+}
+
+.collapsible {
+  background-color: rgb(205, 203, 203);  
+  color: rgb(66, 65, 65);;
+  cursor: pointer;
+  margin-right: 12px;
+  padding: 10px;
+  width: 11%;
+  border: none;
+  text-align: center;
+  font-size: 15px;
+  float: right;
+  border-radius: 8px;
+  min-width: max(8%,5vw);
+  
+}
+
+.modal-header {
+  background-color: rgb(66, 65, 65);
+}
+.modal-header h2 {
+  background-color: inherit;
+  color: rgb(205, 203, 203);
+}
+
+.cancel,.success{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+} */
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  background-color: rgb(232, 242, 237);
+  font-family: "Quicksand";
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.button {
+  background: rgb(243, 19, 19);
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  margin: 2px 3px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.navbar {
+  width: 100%; /* Ensure navbar takes the full width */
+  margin: 0;
+  background-color: rgb(216, 9, 9);
+  box-sizing: border-box;
+}
+
+.navbar h1 {
+  font-size: min(50px, 5vw);
+  background-color: inherit;
+  color: rgb(217, 214, 214);
+  margin-left: 10px;  
+}
+
+.product {
+  background-color: yellow;
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.collapsible {
+  background-color: rgb(205, 203, 203);
+  color: rgb(66, 65, 65);
+  cursor: pointer;
+  margin-right: 12px;
+  padding: 10px;
+  width: 11%;
+  border: none;
+  text-align: center;
+  font-size: 15px;
+  float: right;
+  border-radius: 8px;
+  min-width: max(8%, 5vw);
+}
+
+.modal-header {
+  background-color: rgb(66, 65, 65);
+}
+
+.modal-header h2 {
+  background-color: inherit;
+  color: rgb(205, 203, 203);
+}
+
+.cancel, .success {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+}
